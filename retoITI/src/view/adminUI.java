@@ -75,6 +75,7 @@ public class adminUI extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jComboBox5 = new javax.swing.JComboBox<>();
         jLabel16 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -121,13 +122,13 @@ public class adminUI extends javax.swing.JFrame {
         jPanel2.add(cbxStores, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 100, 150, -1));
 
         jButton1.setText("Modificar");
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 40, -1, -1));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 40, -1, -1));
 
         jButton2.setText("Eliminar");
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 70, 80, -1));
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 40, 80, -1));
 
         jButton3.setText("Agregar");
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 10, 80, -1));
+        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 40, 80, -1));
 
         jTabbedPane1.addTab("Usuarios", jPanel2);
 
@@ -239,10 +240,23 @@ public class adminUI extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Entrega", jPanel3);
 
-        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 610));
+        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 1030, 610));
+
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 50, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        loginGeneral lg = new loginGeneral();
+        lg.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton10ActionPerformed
 
     
 
@@ -250,6 +264,7 @@ public class adminUI extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbxRoles;
     private javax.swing.JComboBox<String> cbxStores;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
