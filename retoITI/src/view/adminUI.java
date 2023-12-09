@@ -41,6 +41,9 @@ public class adminUI extends javax.swing.JFrame {
         cbxRoles = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
         cbxStores = new javax.swing.JComboBox<>();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -53,6 +56,25 @@ public class adminUI extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel10 = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox<>();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jLabel14 = new javax.swing.JLabel();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        jLabel15 = new javax.swing.JLabel();
+        jComboBox4 = new javax.swing.JComboBox<>();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jComboBox5 = new javax.swing.JComboBox<>();
+        jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -98,6 +120,15 @@ public class adminUI extends javax.swing.JFrame {
         cbxStores.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel2.add(cbxStores, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 100, 150, -1));
 
+        jButton1.setText("Modificar");
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 40, -1, -1));
+
+        jButton2.setText("Eliminar");
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 70, 80, -1));
+
+        jButton3.setText("Agregar");
+        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 10, 80, -1));
+
         jTabbedPane1.addTab("Usuarios", jPanel2);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -141,7 +172,72 @@ public class adminUI extends javax.swing.JFrame {
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, 140, -1));
 
+        jButton4.setText("Agregar");
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 70, 80, -1));
+
+        jButton5.setText("Modificar");
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 100, -1, -1));
+
+        jButton6.setText("Eliminar");
+        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 130, 80, -1));
+
         jTabbedPane1.addTab("Productos", jPanel1);
+
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel11.setText("Administrador de Entregas:");
+        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, -1));
+
+        jLabel12.setText("Nombre del producto:");
+        jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, -1, -1));
+        jPanel4.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 140, -1));
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "ID", "Nombre", "Precio", "Categoria", "Cantidad"
+            }
+        ));
+        jScrollPane3.setViewportView(jTable2);
+
+        jPanel4.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1050, 370));
+
+        jLabel14.setText("Categoria ID");
+        jPanel4.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 96, -1, 20));
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel4.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 90, 140, -1));
+
+        jLabel15.setText("Usuario");
+        jPanel4.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 160, -1, -1));
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel4.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, 140, -1));
+
+        jButton7.setText("Agregar");
+        jPanel4.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 70, 80, -1));
+
+        jButton8.setText("Modificar");
+        jPanel4.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 100, -1, -1));
+
+        jButton9.setText("Eliminar");
+        jPanel4.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 130, 80, -1));
+
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel4.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 140, -1));
+
+        jLabel16.setText("Tienda:");
+        jPanel4.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, -1, 20));
+
+        jPanel3.add(jPanel4);
+
+        jTabbedPane1.addTab("Entrega", jPanel3);
 
         getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 610));
 
@@ -153,10 +249,27 @@ public class adminUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> cbxRoles;
     private javax.swing.JComboBox<String> cbxStores;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -167,12 +280,17 @@ public class adminUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     private javax.swing.JTable tblUsers;
     private javax.swing.JTextField txtPassword;
     private javax.swing.JTextField txtUserName;
